@@ -1,0 +1,51 @@
+<div id="skills">
+    <section id="skill" class="skill">
+        <div class="skill__heading" style="opacity: 1; transform: translateX(0px)">
+            <h2 class="skill_title">Skills</h2>
+            <p class="skill__paragraph">Tools &amp; Technologies</p>
+        </div>
+        <div class="underline"></div>
+        <div class="container">
+            <div class="col-lg-2">
+                <button type="button" class="btn-primary btn--color btn-sm" routerLink="/nuevaskill" *ngIf="isLogged">
+                    Nueva Skill
+                </button>
+                <br><br><br>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-12 mx-auto">
+                    <div class="row">
+                        <div class="col-md-3" *ngFor="let skill of skill">
+                            <ul class="list" style="opacity: 1; transform: translateX(0px)">
+                                <li class="list__item list--visible">
+                                    <div class="tecnologia">
+                                        <div class="pie animate no-round" style="--p:{{skill.porcentaje}}">
+                                            <p>{{skill.porcentaje}}</p>
+                                        </div>
+                                        <h5>{{skill.nombre}}</h5>
+                                    </div>
+                                    <div>
+                                        <td *ngIf="isLogged">
+                                            <div>
+                                                <button class="btn-secundary btn--color btn-sm"
+                                                    routerLink="/editskill/{{skill.id}}">
+                                                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                            </div>
+                                        </td>
+                                        <td *ngIf="isLogged">
+                                            <div>
+                                                <button class="btn-secundary btn--color btn-sm"
+                                                    (click)="delete(skill.id)">
+                                                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                            </div>
+                                        </td>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
