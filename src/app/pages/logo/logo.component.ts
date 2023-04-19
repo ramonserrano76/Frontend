@@ -7,8 +7,6 @@ import { TokenService } from 'src/app/service/token.service';
 import { ToastrService } from 'ngx-toastr';
 import { NotificationService } from 'src/app/service/notification.service';
 import { DatosService } from 'src/app/service/datos.service';
-import { USER_STORAGE_KEY } from '@shared/constants/constant';
-import { Token } from '@angular/compiler';
 
 @Component({
   selector: 'app-logo',
