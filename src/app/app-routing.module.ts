@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from '@auth/guards/auth.guard';
+// import { AuthGuard } from '@auth/guards/auth.guard';
 import { HomeComponent } from '@home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -39,15 +39,16 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
   
-  {
-    path: 'sign-in', loadChildren: () => import('./pages/auth/sign-in/sign-in.module').then(m => m.SignInModule),
-    canActivate: [AuthGuard]
-  },
+  // {
+  //   path: 'sign-in', loadChildren: () => import('./pages/auth/sign-in/sign-in.module').then(m => m.SignInModule),
+  //   canActivate: [AuthGuard]
+  // },
 
-  {
-    path: 'sign-up', loadChildren: () => import('./pages/auth/sign-up/sign-up.module').then(m => m.SignUpModule),
-    canActivate: [AuthGuard]
-  },
+  // {
+  //   path: 'sign-up', loadChildren: () => import('./pages/auth/sign-up/sign-up.module').then(m => m.SignUpModule),
+  //   canActivate: [AuthGuard]
+  // },
+  
 //   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 //   { path: 'home', redirectTo: '/home', pathMatch: 'full' },
 //   {

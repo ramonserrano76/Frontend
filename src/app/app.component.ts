@@ -9,7 +9,7 @@ import { CargarscriptsService } from './service/cargarscripts.service';
 })
 export class AppComponent {
   title = 'myportfolio';
-   
+  
   constructor(private _CargaScripts: CargarscriptsService)
   {    
   
