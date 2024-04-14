@@ -9,7 +9,7 @@ import { persona } from 'src/model/persona.model';
 })
 export class PersonaService {
  // authURL =  environment.URL + 'personas/';
-  authURL = 'https://portfolio-ramonserrano76.koyeb.app/personas/';
+  authURL = 'https://myportfolio-bBackend.up.railway.app/personas/';
   constructor(private http: HttpClient) {}
  
   public getPersona(): Observable<persona>{

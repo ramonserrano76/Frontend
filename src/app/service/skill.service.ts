@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 
 export class SkillService {
-  authURL = 'https://portfolio-ramonserrano76.koyeb.app/skill/';
+  authURL = 'https://myportfolio-bBackend.up.railway.app/skill/';
  // authURL = environment.URL + 'skill/';
   constructor(private httpClient: HttpClient) {   }
   
