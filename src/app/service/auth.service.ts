@@ -11,7 +11,7 @@ import { NuevoUsuario } from 'src/model/nuevo-usuario';
 })
 export class AuthService {
  // authURL = environment.URL + 'auth/';
-  authURL = 'https://myportfolio-bBackend.up.railway.app/auth/';
+  authURL = 'https://myportfolio-bbackend.up.railway.app/auth/';
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
