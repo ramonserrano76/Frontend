@@ -9,7 +9,7 @@ import { Educacion } from 'src/model/educacion';
 })
 export class EducacionService {
   //authURL = environment.URL + 'educacion/';
-  authURL = 'https://myportfolio-bbackend.up.railway.app/educacion/';
+  authURL = 'https://portfolio-blogifyar.koyeb.appeducacion/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]> {
