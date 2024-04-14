@@ -8,7 +8,7 @@ import { Experiencia } from 'src/model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  authURL = 'https://portfolio-blogifyar.koyeb.appexplab/';
+  authURL = 'https://portfolio-blogifyar.koyeb.app/explab/';
   //authURL = environment.URL + 'explab/';
   constructor(private httpClient: HttpClient) { }
 

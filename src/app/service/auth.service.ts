@@ -11,7 +11,7 @@ import { NuevoUsuario } from 'src/model/nuevo-usuario';
 })
 export class AuthService {
  // authURL = environment.URL + 'auth/';
-  authURL = 'https://portfolio-blogifyar.koyeb.appauth/';
+  authURL = 'https://portfolio-blogifyar.koyeb.app/auth/';
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
